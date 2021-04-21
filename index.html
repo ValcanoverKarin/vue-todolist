@@ -37,9 +37,14 @@
                 <!--todos-list-->
                 <ul class="todos-list">
                     <!--------1c. aggiungo v-for per stampare i todo-------->
-                    <li v-for="todo in todos">
+                    <!--------2d. aggiungo index-------->
+                    <li v-for="(todo, index) in todos">
                         {{ todo }}
-                        <span class="delete"><i class="fas fa-times"></i></span>
+                        <!--------2a. aggiunto il click per far si che schiacciando la x la frase corrispondente si cancelli-------->
+                        <!--------2e. aggiungo index alla funzione-------->
+                        <span class="delete" @click="deleteTodo(index)">
+                            <i class="fas fa-times"></i>
+                        </span>
                     </li>
                 </ul>
                 <!--end todos-list-->

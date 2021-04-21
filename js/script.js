@@ -18,12 +18,20 @@ var app = new Vue (
 
         },
         methods: {
-            //1g. click addNewTodo
+            //1g. click addNewTodo per aggiungere l elemento dall array
             addNewTodo() {
                 //1h. aggiungo nei todos ciò che scrive l utente 
                 this.todos.push(this.userNewTodo);
                 //1i. una volta che l utente ha aggiunto ritorna vuota 
                 this.userNewTodo = '';
+            },
+            //2b. click deleteTodo per rimuovere l elemento dall array
+            //2c. aggiungo index perchè ho bisogno dell'indice dell elemento in cui si clicca
+            deleteTodo(index) {
+                //2f. uso splice a cui serve:
+                //    l'indice da cui iniziare per rimuovere gli elementi 
+                //    e quanti elementi deve levare dopo quell indice
+                this.list.splice(index, 1)
             }
         }
     }
