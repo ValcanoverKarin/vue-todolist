@@ -12,6 +12,48 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
+
+    <div id="root">
+        <!--container-->
+        <div class="container">
+            <!--logo-->
+            <div class="logo">
+                <img src="https://www.boolean.careers/images/misc/logo.png" alt="logo">
+            </div>
+            <!--end logo-->
+
+            <!--new todo-->
+            <div class="new-todo">
+                <input class="text-input" type="text" placeholder="Nuovo Todo">
+                <button class="btn">Aggiungi</button>
+            </div>
+            <!--end new todo-->
+
+            <!--lista todos-->
+            <div class="todos-container">
+                <!--todos-list-->
+                <ul class="todos-list">
+                    <li>
+                        <span>Fare i compiti</span>
+                        <span class="delete"><i class="fas fa-times"></i></span>
+                    </li>
+
+                    <li>
+                        <span>Fare la spesa</span>
+                        <span class="delete"><i class="fas fa-times"></i></span>
+                    </li>
+
+                    <li>
+                        <span>Fare il bucato</span>
+                        <span class="delete"><i class="fas fa-times"></i></span>
+                    </li>
+                </ul>
+                <!--end todos-list-->
+            </div>
+            <!--end lista todos-->
+        </div>
+        <!--end container-->
+    </div>
     
 
     <script src="js/script.js"></script>

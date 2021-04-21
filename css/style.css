@@ -1,6 +1,64 @@
-/* RESET */
+/*RESET*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*COMMON*/
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.text-input {
+    padding: 10px 20px;
+    min-width: 300px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+/*logo*/
+.logo img{
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/*new-todo*/
+.new-todo{
+    text-align: center;
+}
+
+/*lista todos*/
+.todos-container {
+    background-color: #f4f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.todos-list{
+    list-style-type: none;
+}
+
+.todos-list li{
+    padding: 7px;
+    border-bottom: 1px solid lightgray;
+}
+
+.todos-list li:hover{
+    background-color: #fff;
+}
+
+.todos-list li .delete{
+    float: right;
 }
