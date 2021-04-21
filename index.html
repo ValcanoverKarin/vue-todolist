@@ -25,7 +25,8 @@
             <!--new todo-->
             <div class="new-todo">
                 <!--------1e. aggiunto il v-model-------->
-                <input v-model="userNewTodo" class="text-input" type="text" placeholder="Nuovo Todo">
+                <!--------1j. aggiunto keyup.enter per far si che quando l'utente schiaccia invio (con il focus sulla imput) succede ciò che fa il click-------->
+                <input v-model="userNewTodo" @keyup.enter="addNewTodo" class="text-input" type="text" placeholder="Nuovo Todo">
                 <!--------1f. aggiunto il click per far partire la funzione schiacciando aggiungi-------->
                 <button @click="addNewTodo" class="btn">Aggiungi</button>
             </div>
