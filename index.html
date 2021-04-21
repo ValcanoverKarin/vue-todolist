@@ -33,18 +33,9 @@
             <div class="todos-container">
                 <!--todos-list-->
                 <ul class="todos-list">
-                    <li>
-                        <span>Fare i compiti</span>
-                        <span class="delete"><i class="fas fa-times"></i></span>
-                    </li>
-
-                    <li>
-                        <span>Fare la spesa</span>
-                        <span class="delete"><i class="fas fa-times"></i></span>
-                    </li>
-
-                    <li>
-                        <span>Fare il bucato</span>
+                    <!--------1b. aggiungo v-for per stampare i todo-->
+                    <li v-for="todo in todos">
+                        {{ todo }}
                         <span class="delete"><i class="fas fa-times"></i></span>
                     </li>
                 </ul>
