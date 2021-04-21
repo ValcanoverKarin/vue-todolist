@@ -31,7 +31,7 @@ var app = new Vue (
                 //2f. uso splice a cui serve:
                 //    l'indice da cui iniziare per rimuovere gli elementi 
                 //    e quanti elementi deve levare dopo quell indice
-                this.list.splice(index, 1)
+                this.todos.splice(index, 1);
             }
         }
     }
