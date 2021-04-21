@@ -24,8 +24,10 @@
 
             <!--new todo-->
             <div class="new-todo">
-                <input class="text-input" type="text" placeholder="Nuovo Todo">
-                <button class="btn">Aggiungi</button>
+                <!--------1e. aggiunto il v-model-------->
+                <input v-model="userNewTodo" class="text-input" type="text" placeholder="Nuovo Todo">
+                <!--------1f. aggiunto il click per far partire la funzione schiacciando aggiungi-------->
+                <button @click="addNewTodo" class="btn">Aggiungi</button>
             </div>
             <!--end new todo-->
 
@@ -33,7 +35,7 @@
             <div class="todos-container">
                 <!--todos-list-->
                 <ul class="todos-list">
-                    <!--------1b. aggiungo v-for per stampare i todo-->
+                    <!--------1c. aggiungo v-for per stampare i todo-------->
                     <li v-for="todo in todos">
                         {{ todo }}
                         <span class="delete"><i class="fas fa-times"></i></span>

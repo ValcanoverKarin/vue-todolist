@@ -7,6 +7,8 @@ var app = new Vue (
     {
         el: '#root',
         data: {
+            //1d. creo una variabile vuota per il v-model
+            userNewTodo: '',
             //1b. creo array
             todos: [
                 'Fare i compiti',
@@ -16,7 +18,13 @@ var app = new Vue (
 
         },
         methods: {
-
+            //1g. click addNewTodo
+            addNewTodo() {
+                //1h. aggiungo nei todos ciò che scrive l utente 
+                this.todos.push(this.userNewTodo);
+                //1i. una volta che l utente ha aggiunto ritorna vuota 
+                this.userNewTodo = '';
+            }
         }
     }
 
